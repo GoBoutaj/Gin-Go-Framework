@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "2f69d976-2311-4762-a2db-8cea456e3d42",
+		"name": "GO-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17184451"
+	},
+	"item": [
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\":\"Amine\",\r\n    \"LastName\":\"Aboutaj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create-student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get student by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/student/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update student by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\":\"Amine\",\r\n    \"LastName\":\"Aboutajj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
